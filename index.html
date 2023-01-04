@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css//index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jQuery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>微信</span>
+        <input type="search" name="" id="" placeholder="搜索">
+        <i class="ss iconfont icon-sousuo"></i>
+        <i class="tj iconfont icon-jiahao"></i>
+    </header>
+    <section>
+        <div class="msg">
+            <div class="pic">
+                <img src="images/tx.jpg" alt="">
+            </div>
+            <div class="txt">
+                B133 <span>(蠢蛋和大聪明)</span>
+            </div>
+            <span class="tm"></span>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="one">
+                <span class="top icon-xiaoxi_o iconfont"></span>
+                <span class="bottom">微信</span>
+            </div>
+            <div class="one">
+                <span class="top icon-tongxunlu iconfont"></span>
+                <span class="bottom">通讯录</span>
+            </div>
+            <div class="one">
+                <span class="top icon-faxian iconfont"></span>
+                <span class="bottom">发现</span>
+            </div>
+            <div class="one">
+                <span class="top icon-wo iconfont"></span>
+                <span class="bottom">我</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            gettime();
+            function gettime() {
+                let cl = null;
+                let t = new Date();
+                let h = t.getHours();
+                let m = t.getMinutes();
+                h = h < 10 ? '0' + h : h;
+                m = m < 10 ? '0' + m : m;
+                if (h >= 12) {
+                    cl = '下午';
+                } else {
+                    cl = '上午';
+                }
+                $('.tm').text(cl + h + ':' + m);
+            }
+            //页面跳转功能
+            $('.msg').on('click', function () {
+                location.href = 'communicate.html';
+            })
+        })
+    </script>
+</body>
+
+</html>

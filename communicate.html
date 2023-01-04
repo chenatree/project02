@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jQuery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <span class="one"></span>
+            <span class="two">95</span>
+            <span class="title">B133(蠢蛋和大聪明)</span>
+            <span class="right">...</span>
+        </div>
+    </header>
+    <article>
+        <div class="az">
+            <div class="pic">
+                <img src="images/az.jpg" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">啊祝</span>
+                <span class="talk">吃饭了xdm</span>
+            </div>
+        </div>
+        <div class="az">
+            <div class="pic">
+                <img src="images/ah.jpg" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">啊榆</span>
+                <span class="talk">好好好</span>
+            </div>
+        </div>
+        <div class="az">
+            <div class="pic">
+                <img src="images/ale.jpg" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">啊乐</span>
+                <span class="talk">我要吃片皮鸭</span>
+            </div>
+        </div>
+        <div class="az">
+            <div class="pic">
+                <img src="images/ap.jpg" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">啊鹏</span>
+                <span class="talk">老领导来了</span>
+            </div>
+        </div>
+        <div class="az">
+            <div class="pic">
+                <img src="images/al.jpg" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">啊廖</span>
+                <span class="talk">卡卡呀给flash</span>
+            </div>
+        </div>
+        <div class="as">
+            <div class="msg">
+                <span class="name">啊树</span>
+                <span class="talk"></span>
+            </div>
+            <div class="pic">
+                <img src="images/as.jpg" alt="">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="footer">
+            <span class="left iconfont icon-yuyin"></span>
+            <input type="text" class="middle">
+            <span class="rightone iconfont icon-xiaolian"></span>
+            <span class="righttwo iconfont icon-jiahao"></span>
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            $('.az').hide();
+            $('.as').hide();
+            setTimeout(zero, 1000);
+            setTimeout(one, 3000);
+            setTimeout(two, 4000);
+            setTimeout(three, 5000);
+            setTimeout(four, 6000);
+            function zero() {
+                $('.az').eq(0).fadeIn(2000);
+            }
+
+            function one() {
+                $('.az').eq(1).fadeIn(2000);
+            }
+            function two() {
+                $('.az').eq(2).fadeIn(2000);
+            }
+            function three() {
+                $('.az').eq(3).fadeIn(2000);
+            }
+            function four() {
+                $('.az').eq(4).fadeIn(2000);
+            }
+        });
+        $('.middle').on('keyup', function (e) {
+            if (e.keyCode == 13) {
+                $('.as .talk').text($(this).val());
+                $(this).val('');
+                $('.as').fadeIn();
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: -apple-system, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.3333vw;
+}
+
+header span {
+    margin-top: 2.6667vw;
+    margin-bottom: 2.6667vw;
+    color: #fff;
+    font-size: 5.3333vw;
+}
+
+header input {
+    padding-left: 45.3333vw;
+    width: 100%;
+    height: 8vw;
+    border-radius: 2.6667vw;
+    font-size: 4vw;
+}
+
+header .ss {
+    position: absolute;
+    top: 68%;
+    left: 42%;
+    color: #ccc;
+    font-weight: 800;
+}
+
+header .tj {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    color: #ccc;
+    font-size: 5.3333vw;
+    font-weight: 500;
+}
+
+
+section {
+    padding-top: 2.6667vw;
+}
+
+section .msg {
+    position: relative;
+    /* border: 0.2667vw solid #ccc; */
+    /* border-left-color: transparent;
+    border-right-color: transparent; */
+    border-bottom: 1px solid #ccc;
+    padding: 2.1333vw 1.3333vw 0;
+    height: 17.3333vw;
+    background-color: rgb(48, 45, 45, .6);
+}
+
+section .msg:hover {
+    cursor: pointer;
+}
+
+section .msg .pic {
+    display: inline-block;
+    width: 13.3333vw;
+    height: 13.3333vw;
+    border-radius: 2.1333vw;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+section .msg .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+section .msg .txt {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.3333vw;
+    color: #fff;
+    font-size: 5.8667vw;
+}
+
+section .msg .txt span {
+    margin-left: -2.1333vw;
+    position: absolute;
+    top: -3%;
+    width: 40vw;
+    font-size: 4.8vw;
+    text-align: center;
+}
+
+section .msg .tm {
+    position: absolute;
+    top: 8%;
+    right: 0;
+    width: 21.3333vw;
+    height: 5.3333vw;
+    color: #ccc;
+    font-size: 4vw;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16vw;
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .one .top {
+    font-size: 9.3333vw;
+    color: #fff;
+}
+
+.footer .one .bottom {
+    padding-left: 0.5333vw;
+    color: #fff;
+    font-size: 2.6667vw;
+    text-align: center;
+}
+
+.footer .one:nth-of-type(2) .top {
+    padding-left: 1.3333vw;
+}
